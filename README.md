@@ -2,14 +2,14 @@
 
 Allows users to add a charity amount to their cart and donate to a cause of their choice.
 
-***A big update for charity plugin :)***
+***A big update for the charity plugin :)***
 
 Now you have a plugin that is a management menu in WordPress that is accessible only to the main admin.
 
 ### New features:
 * Adding charity amount to order details
 <img src="assets/img/charity-amount.jpg" alt="charity amount">
-* Adding charity amount to order details in WooCommerce admin panel
+* Adding charity amount to order details in the WooCommerce admin panel
 <img src="assets/img/charity-amount-2.jpg" alt="charity">
 * Add dynamic text for charity text
 <img src="assets/img/title.jpeg" alt="charity">
@@ -17,7 +17,7 @@ Now you have a plugin that is a management menu in WordPress that is accessible 
 
 
 ### Directory Structure:
-    private-woocommerce-emails/
+    my-custom-charity-plugin/
       ├── assets/
          └── css/
             ├── style.css
