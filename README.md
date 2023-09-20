@@ -1,44 +1,58 @@
-<div>
-  <h1>My Charity Plugin</h1>
-</div>
+# My Charity Plugin v2.0.0
 
-<p>Allows users to add a charity amount to their cart and donate to a cause of their choice.
-</p>
+Allows users to add a charity amount to their cart and donate to a cause of their choice.
 
-<h3>Description</h3>
+***A big update for the charity plugin :)***
 
-##### This is the first version of my plugin for WordPress, in this version we have a check box that has three static fields, by clicking on each one we can add the desired amount as charity to the WooCommerce shopping cart total.
-<br>
+Now you have a plugin that is a management menu in WordPress that is accessible only to the main admin.
 
-##### After the plugin is activated, a checkbox will be added on the WooCommerce checkout page under the cart total section.
-<br>
+### New features:
+* Adding charity amount to order details
+<img src="assets/img/charity-amount.jpg" alt="charity amount">
+* Adding charity amount to order details in the WooCommerce admin panel
+<img src="assets/img/charity-amount-2.jpg" alt="charity">
+* Add dynamic text for charity text
+<img src="assets/img/title.jpeg" alt="charity">
+<img src="assets/img/show-title.jpeg" alt="charity">
 
-##### You can edit its text in line 49 of the charity-plugin.php document.
-``` html
-<div class="parent">
- <label>
-    <input type="checkbox"class="parent-checkbox">Want to donate a charity?
- </label>
-```
-<br>
 
-##### In the next versions, this item will be added dynamically
+### Directory Structure:
+    private-woocommerce-emails/
+      ├── assets/
+         └── css/
+            ├── style.css
+         └── js/
+            ├── charity.js
+      ├── includes/
+         └── admin/
+            ├── add-admin-menu.php
+            ├── show-charity-amount-in-order-details.php
+         └── front/
+            ├── display-charity-amount-field.php
+    ├── my-custom-charity-plugin.php
 
-<br>
 
----
-<h3>Dependency</h3>
-<pre>
-<a href="https://code.jquery.com/jquery-3.6.4.min.js" target="_blank">jquery 3.6.4</a>
-<a href="https://wordpress.org/download/">wordpress</a>
-<a href="https://wordpress.org/plugins/woocommerce/">woocommerce</a>
-</pre>
+### Change Log
 
-<h3>Technology used</h3>
-<pre>
-# HTML
-# CSS
-# jquery 3.6.4
-# PHP 7.4
-</pre>
+**Version 2.0.0**
+````
+- Plugin rewrite to modular
+- Changes in the jQuery structure for better optimization and displaying the charity amount on the payment page
+- Adding a management menu for the plugin for better access to change the displayed texts for charity
+- Changing the plugin core to version 2
+- Adding the display of the amount paid by users to the details of orders in WooCommerce (admin panel and customer orders)
+- The ability to detect the currency used
+- Compatible with WooCommerce 8.1.1
+- Compatible with WordPress 6.3.1
+- Run with PHP >= 7.4
+````
 
+**Version 1.0.2**
+````
+Fix: Bugs jQuery
+````
+**Version 1.0.0**
+
+````
+Init
+````
