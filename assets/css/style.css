@@ -1,62 +1,62 @@
 .parent {
     padding-left: 20px;
-  }
-  
-  .parent > label {
+}
+
+.parent > label {
     display: flex;
     align-items: center;
-  }
-  
-  .parent-checkbox {
+}
+
+.parent-checkbox {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-  }
-  
-  .child-list {
+}
+
+.child-list {
     display: none;
     margin-top: 10px;
-  }
-  
-  .child-checkbox {
+}
+
+.child-checkbox {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-  }
-  
-  .child-input {
+}
+
+.child-input {
     display: none;
     border: 1px solid;
     padding-left: 5px;
     margin-top: 10px;
     margin-left: 30px;
-  }
-  
-  .child-value {
-    width: 50px;
-  }
-  .child-input-amount {
+}
+
+.child-value {
+    width: 80% !important;
+}
+.child-input-amount {
     background: #e3dfdf;
     padding: 4px;
     margin-left: -5px;
-  }
-  
-  .grandchild-list {
+}
+
+.grandchild-list {
     display: none;
     margin-top: 10px;
     margin-left: 30px;
-  }
-  
-  .grandchild-checkbox {
+}
+
+.grandchild-checkbox {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-  }
-  
-  .grandchild-input {
+}
+
+.grandchild-input {
     display: none;
-  }
-  
-  .grandchild-checkbox:checked ~ .grandchild-input {
+}
+
+.grandchild-checkbox:checked ~ .grandchild-input {
     display: block;
-  }
+}
